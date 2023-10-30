@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&family=Josefin+Sans:wght@300&family=Lato&family=Quicksand:wght@500;700&display=swap');
+
+
+
+body{
+    margin: 0;
+}
+
+body{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    display: flex;
+    flex-direction: column;
+}
+
+header .name-header{
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .name-header h2{
+     font-family: 'Josefin Sans', sans-serif;
+     color: rgb(20, 20, 58);
+     font-size: 4rem;
+     text-align: left;
+    font-display: bold;
+
+     width: 60%;
+     margin: 40px auto;
+}
+
+
+header .nav-list ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+header .nav-list ul li {
+    list-style-type: none;
+}
+
+header .nav-list ul li:hover a {
+    color: rgb(53, 53, 150);
+}
+
+header .nav-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 3rem;
+
+}
+
+hr{
+    border: 0.2px solid rgb(55, 80, 121);
+}
+
+
+/* main  */
+main {
+    margin: 0 10px;
+}
+
+main #journey{
+    background-color: rgb(231, 235, 255);
+    margin : 0;
+    padding: 10px 0 ;
+    
+    
+}
+
+main article{
+    margin-bottom: 20px;
+}
+
+main #journey h2{
+    color: rgb(23, 23, 65);;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    
+}
+main #journey p{
+    text-align: center;
+    font-family:'Dosis', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    margin-bottom: 2rem;
+    
+}   
+
+
+main .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(245, 245, 245);
+    margin: 20px 0;
+    
+}
+
+
+main #profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    padding: 40px;
+
+    order: -1;
+    /* border: 2px solid black; */
+
+}
+
+main #profile .profile-description {
+    flex: 1 1;
+}
+
+main #profile .profile-image img{
+    width: 14rem;
+    
+}
+
+main #profile .profile-image{
+    order: -1;    
+}
+
+main #profile .profile-description{
+    padding: 20px 50px; 
+    font-family: 'Lato', sans-serif;
+    
+    color: rgb(51, 51, 51);
+
+}
+
+main #profile .profile-description h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+    
+}
+
+main #profile .profile-description p a{
+    text-decoration: underline;
+    color: rgb(43, 43, 43);
+
+}
+
+main #profile .profile-description p  #link_stmik:hover{
+    color: rgb(17, 34, 88);   
+}
+
+main #profile .profile-description p  #link_bangkit:hover{
+    color: rgb(179, 40, 40);   
+}
+
+main #skill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+
+
+main #skill .card-skill {
+    /* max-width: 12rem; */
+    width: 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    
+    border: 2px solid rgb(216, 216, 216);
+
+    flex-grow: 1;
+    justify-content: center;
+
+    
+    
+}
+
+
+main #skill .card-skill img{
+    
+    /* flex-grow: 1; */
+    width: 100%;
+    /* width: 100%; */
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+
+    border: 2px solid rgb(241, 241, 241);
+
+}
+
+main #skill .card-skill p{
+    
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   margin: 5px;
+   
+
+}
+
+main #skill .card-skill h3{
+    
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 20px 0 10px 0;
+    /* border: 2px solid black; */
+ 
+ }
+ 
+
+main #skill .card-skill h2{
+    flex-direction: column;
+    text-align: center;
+}
+
+ @media screen and (max-width: 651px) {
+    main #profile {
+      flex-direction: column;
+      
+    }
+  }
+
+  
+main aside {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+
+    /* border: 5px solid red; */
+}
+
+/* main aside .social-media {
+    height: 100%;
+    display: flex;
+} */
+
+main aside .social-media ul {
+    padding: 1rem 2rem;
+    margin: auto;
+    border-radius: 10px;
+    /* border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; */
+    background-color: #1e2f42cb;
+
+    display: flex;
+    
+    flex-flow: row nowrap;  /*The flex-flow property is a shorthand property for: flex-direction,flex-wrap */
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li img {
+    text-decoration: none;
+    width: 20px;
+    
+}
+
+
+main aside .social-media img:hover {
+    width: 30px;
+    transition: all .2s ease-in-out;
+}
+
+
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #1a202c;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+  }
+
+ 
+
